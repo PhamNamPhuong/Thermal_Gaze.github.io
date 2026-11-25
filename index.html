@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>COMM2754 — Digital Media Exhibition</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+    <script src="./p5.js"></script>
+  </head>
+  <body>
+    <div id="artwork" class="artwork" role="img" aria-label="An animated thermal eye against an expanding fractal"></div>
+
+    <!-- Exhibition markup (assisted with AI) -->
+    <main class="exhibition">
+      <section class="corner corner--identity" aria-labelledby="artwork-title">
+        <h1 id="artwork-title"><span class="copy">THERMAL GAZE</span></h1>
+        <p class="artist"><span class="copy">Pham Nam Phuong</span></p>
+        <p class="group"><span class="copy"><strong>Group Name:</strong><br> Thang Long Bam Sai Gon Bac</span></p>
+
+        <div class="credits">
+          <p class="credits-label"><span class="copy">Group Members:</span></p>
+          <ul class="members" role="list">
+            <li><span class="copy">Nguyen Phuong Linh</span></li>
+            <li><span class="copy">Nguyen Nghia Dung</span></li>
+            <li><span class="copy">Do Minh Anh</span></li>
+          </ul>
+        </div>
+        <button class="sound-control" type="button" aria-pressed="false">
+          sound <span class="sound-on">on</span> / <span class="sound-off">off</span>
+        </button>
+      </section>
+
+      <section class="corner corner--goal" aria-labelledby="goal-title">
+        <h2 id="goal-title">
+          <span class="goal-number"><span class="copy"><span class="goal-prefix">SDG</span> 13</span></span>
+          <a class="goal-name" href="https://sdgs.un.org/goals/goal13">CLIMATE ACTION</a>
+        </h2>
+        <p class="goal-description"><span class="copy">Take urgent action to combat climate change and its impacts.</span></p>
+      </section>
+
+      <section class="corner corner--academic" aria-labelledby="course-code">
+        <h2 id="course-code"><span class="copy">COMM2754</span></h2>
+        <p class="course">
+          <span class="copy">Digital Media Specialisation 1<br>
+            Thursday 11:30 - 14:30</span>
+        </p>
+        <p class="affiliation"><span class="copy">RMIT University Vietnam<br>Saigon South Campus<br>School of Communication and Design<br>Digital Media Program</span></p>
+        <p class="exhibition-date"><time class="copy" datetime="2026-11-25">25 November 2026</time></p>
+      </section>
+
+      <section class="corner corner--context" aria-label="Quote, context and call to action">
+        <figure class="quote">
+          <blockquote><p><span class="copy">“I believe humankind has looked at climate change in that same way: as if it were a fiction, happening to someone else’s planet.”</span></p></blockquote>
+          <figcaption class="quote-credit">
+            <span class="copy"><i>-Leonardo DiCaprio (2014)<br><cite>United Nations Climate Summit</cite><br>23 September 2014 · New York, United States</i></span>
+          </figcaption>
+        </figure>
+        <div class="context-disclosure">
+          <div class="context-window">
+            <p class="context" id="climate-context"><span class="copy">Most of us have heard about climate change, but knowing it exists is different from understanding how it connects to our lives. As Leonardo DiCaprio said, I believe humankind has looked at climate change in that same way: as if it were a fiction, happening to someone else's planet His words challenge the distance we often put between ourselves and the crisis. SDG 13 calls for action on climate change, and understanding its local impacts can help us see where to begin.</span></p>
+            <p class="context-preview" hidden><span class="copy"></span><span class="context-reserve" aria-hidden="true">&nbsp;more</span></p>
+          </div>
+          <button class="context-more" type="button" aria-expanded="false" aria-controls="climate-context" hidden>more</button>
+        </div>
+        <p class="action"><span class="copy">Bring climate closer: learn how climate change is affecting your community today.</span></p>
+      </section>
+    </main>
+    <script src="context-disclosure.js"></script>
+    <script src="soundscape.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
